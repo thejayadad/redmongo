@@ -47,11 +47,11 @@ const Navbar = () => {
             </li>
         </ul>
    <button
-        className=' border-2 border-blue-500 px-6 py-2 rounded-full text-blue-500 font-semibold hover:bg-blue-500 hover:text-white transition-all duration-300'
-        >Sign In</button>
+        className=' border-2 bg-primary px-6 py-2 rounded-md text-blue-500 font-semibold hover:bg-blue-500 hover:text-white transition-all duration-300'
+        >Login In</button>
         <button
-        className="gap-y-5"
-        >Sign In</button>
+        className=' border-2 border-primary px-6 py-2 rounded-md text-blue-500 font-semibold hover:bg-blue-500 hover:text-white transition-all duration-300'
+        >Register</button>
     </nav>
    </header>
   )

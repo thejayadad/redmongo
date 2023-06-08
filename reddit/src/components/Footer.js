@@ -20,27 +20,27 @@ const Footer = () => {
             <li class="w-1/2 md:w-1/3 lg:w-1/3">
                 <div class="text-center">
                     <h2 class="text-gray-500 dark:text-gray-200 text-md uppercase mb-4">
-                        Components
+                        CATEGORY
                     </h2>
                     <ul>
                         <li class="mb-4 transition-colors duration-200 hover:text-gray-800 dark:hover:text-white">
                             <a href="#">
-                                Elements
+                                Sports
                             </a>
                         </li>
                         <li class="mb-4 transition-colors duration-200 hover:text-gray-800 dark:hover:text-white">
                             <a href="#">
-                                Forms
+                                Money
                             </a>
                         </li>
                         <li class="mb-4 transition-colors duration-200 hover:text-gray-800 dark:hover:text-white">
                             <a href="#">
-                                Commerces
+                                News
                             </a>
                         </li>
                         <li class="mb-4 transition-colors duration-200 hover:text-gray-800 dark:hover:text-white">
                             <a href="#">
-                                Navigation
+                                Tech
                             </a>
                         </li>
                     </ul>
@@ -49,22 +49,22 @@ const Footer = () => {
             <li class="w-1/2 md:w-1/3 lg:w-1/3">
                 <div class="text-center">
                     <h2 class="text-gray-500 dark:text-gray-200 text-md uppercase mb-4">
-                        Contacts
+                        CONTACTS
                     </h2>
                     <ul>
                         <li class="mb-4 transition-colors duration-200 hover:text-gray-800 dark:hover:text-white">
                             <a href="#">
-                                Github
+                                Youtube
                             </a>
                         </li>
                         <li class="mb-4 transition-colors duration-200 hover:text-gray-800 dark:hover:text-white">
                             <a href="#">
-                                Facebook
+                                Instagram
                             </a>
                         </li>
                         <li class="mb-4 transition-colors duration-200 hover:text-gray-800 dark:hover:text-white">
                             <a href="#">
-                                Twitter
+                                Tic Tok
                             </a>
                         </li>
                         <li class="mb-4 transition-colors duration-200 hover:text-gray-800 dark:hover:text-white">
@@ -78,27 +78,27 @@ const Footer = () => {
             <li class="w-1/2 md:w-1/3 lg:w-1/3">
                 <div class="text-center">
                     <h2 class="text-gray-500 dark:text-gray-200 text-md uppercase mb-4">
-                        Customization
+                        Join Us
                     </h2>
                     <ul>
                         <li class="mb-4 transition-colors duration-200 hover:text-gray-800 dark:hover:text-white">
                             <a href="#">
-                                Settings
+                                Locations
                             </a>
                         </li>
                         <li class="mb-4 transition-colors duration-200 hover:text-gray-800 dark:hover:text-white">
                             <a href="#">
-                                Themes
+                                Career Opprotunities
                             </a>
                         </li>
                         <li class="mb-4 transition-colors duration-200 hover:text-gray-800 dark:hover:text-white">
                             <a href="#">
-                                Plugins
+                                Sponsor
                             </a>
                         </li>
                         <li class="mb-4 transition-colors duration-200 hover:text-gray-800 dark:hover:text-white">
                             <a href="#">
-                                LinkedIn
+                                Partner
                             </a>
                         </li>
                     </ul>

@@ -58,10 +58,10 @@ const Navbar = () => {
                 <>
                 <Link
                 href='/create-post'
-                className='px-6 py-2.5 rounded-md bg-primary mt-3 text-white hover:bg-blue-500 hover:text-white transition-all duration-300'
+                className='px-6 py-2.5 rounded-md bg-primary mt-3 text-white hover:bg-indigo-50 hover:text-indigo-500 transition-all duration-300'
                 >Create Post</Link>
                 <button onClick={() => {signOut()}} 
-                className=' px-6 py-2.5 rounded-md bg-blue-500 mt-3 text-white hover:bg-primary hover:text-white transition-all duration-300'
+                className=' px-6 py-2.5 rounded-md bg-indigo-50 mt-3 text-indigo-500 hover:bg-primary hover:text-white transition-all duration-300'
                 >Logout</button>
 
                 </>

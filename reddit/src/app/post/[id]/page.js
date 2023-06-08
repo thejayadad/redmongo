@@ -16,16 +16,16 @@ export default function Post() {
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.17/dist/tailwind.min.css" />
       </Head>
         <section>
-        <div class="container px-5 py-12 mx-auto">
+        <div class="container px-5 py-12 mx-auto ">
     <div class="flex flex-wrap -m-12">
       <div class="p-12 flex flex-col">
         <h2 class="sm:text-3xl text-2xl title-font font-medium text-gray-900 mt-4 mb-4 text-center">Roof party normcore before they sold out, SBSRB srb m lknlkm asrlk laksnrl als nbjka bkljadkbm  cornhole vape</h2>
         <div className="flex items-center justify-center mt-4 gap-x-5 pt-4 pb-5">
-              <Link href="/" className="px-6 py-2 rounded-md text-blue-500 font-semibold hover:bg-blue-500 hover:text-white transition-all duration-300">
-              <BsFillPencilFill style={{color: "yellow", fontSize: "34px"}} />
+              <Link href="/" className="px-6 py-2 rounded-md text-primary font-semibold hover:bg-blue-500 hover:text-white transition-all duration-300">
+              <BsFillPencilFill style={{fontSize: "34px"}} />
               </Link>
-              <Link href="#" className="px-6 py-2 rounded-md text-blue-500 font-semibold hover:bg-blue-500 hover:text-white transition-all duration-300">
-              <AiFillDelete style={{color: "red", fontSize: "34px"}} />
+              <Link href="#" className="px-6 py-2 rounded-md text-primary font-semibold hover:bg-blue-500 hover:text-white transition-all duration-300">
+              <AiFillDelete style={{fontSize: "34px"}} />
               </Link>
           </div>
         <h2 className='text-center text-gray-400 mb-2'>Post By</h2>

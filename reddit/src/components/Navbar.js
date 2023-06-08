@@ -2,13 +2,18 @@
 'use client'
 
 
-import React, { useState } from "react";
 import Link from 'next/link'
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
+import React, { useState } from 'react'
+import {signIn, signOut, useSession} from 'next-auth/react'
+
 
 
 const Navbar = () => {
     const [navIsVisible, setNavIsVisible] = useState(false);
+    const {data: session} = useSession()
+
+    const loggedIn = false
 
     const navVisibilityHandler = () => {
         setNavIsVisible((curState) => {
@@ -46,16 +51,45 @@ const Navbar = () => {
                 <Link className="text-orange-300 text-2xl font-bold hover:bg-orange-700 p-2 border-md hover:text-white transition-all duration-300" href={'/'}>About</Link>
             </li>
         </ul>
-   <Link
-    href='/login'
-        className='px-6 py-2.5 rounded-md bg-primary mt-3 text-white hover:bg-blue-500 hover:text-white transition-all duration-300'
-        >Login In</Link>
-        <Link href='/register'
-        className=' px-6 py-2.5 rounded-md bg-blue-500 mt-3 text-white hover:bg-primary hover:text-white transition-all duration-300'
-        >Register</Link>
+        {
+            session ?.user
+
+            ? (
+                <>
+                <Link
+                href='/create-post'
+                className='px-6 py-2.5 rounded-md bg-primary mt-3 text-white hover:bg-blue-500 hover:text-white transition-all duration-300'
+                >Create Post</Link>
+                <button onClick={() => {signOut()}} 
+                className=' px-6 py-2.5 rounded-md bg-blue-500 mt-3 text-white hover:bg-primary hover:text-white transition-all duration-300'
+                >Logout</button>
+
+                </>
+            ) : (
+                <>
+                <Link
+                href='/login'
+                className='px-6 py-2.5 rounded-md bg-primary mt-3 text-white hover:bg-blue-500 hover:text-white transition-all duration-300'
+                >Login In</Link>
+                <Link href='/register'
+                className=' px-6 py-2.5 rounded-md bg-blue-500 mt-3 text-white hover:bg-primary hover:text-white transition-all duration-300'
+                >Register</Link>
+                                    
+                </>
+            )
+        }
+
     </nav>
    </header>
   )
 }
 
 export default Navbar
+
+{/* <Link
+href='/login'
+    className='px-6 py-2.5 rounded-md bg-primary mt-3 text-white hover:bg-blue-500 hover:text-white transition-all duration-300'
+    >Login In</Link>
+    <Link href='/register'
+    className=' px-6 py-2.5 rounded-md bg-blue-500 mt-3 text-white hover:bg-primary hover:text-white transition-all duration-300'
+    >Register</Link> */}

@@ -1,10 +1,10 @@
-import dbConnect from '@/lib/db';
+    import dbConnect from '@/lib/db';
 
 import Post from '@/models/Post';
-import { verifyJwtToken } from '@/lib/jwt';
+import { verifyJwtToken, verifyToken } from '@/lib/jwt';
 
 export async function GET(req) {
-    await db.connect()
+    await dbConnect()
 
     try {
         const posts = await Post.find({}).limit(16).populate("authorId")
@@ -28,9 +28,9 @@ export async function POST(req) {
 
     try {
         const body = await req.json()
-        const newpost = await Post.create(body)
+        const newPost = await Post.create(body)
 
-        return new Response(JSON.stringify(newpost), { status: 201 })
+        return new Response(JSON.stringify(newPost), { status: 201 })
     } catch (error) {
         return new Response(JSON.stringify(null), { status: 500 })
     }

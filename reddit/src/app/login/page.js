@@ -1,8 +1,13 @@
 'use client'
+
+
 import { signIn } from 'next-auth/react'
 import Link from 'next/link'
 import { useRouter } from 'next/navigation'
 import React, { useState } from 'react'
+
+import 'react-toastify/dist/ReactToastify.css'
+
 
 
 const Login = () => {
@@ -48,15 +53,15 @@ const Login = () => {
    Welcome Back!
 </div>
 <div class="mt-8">
-    <form action="#" autoComplete="off">
+<form onSubmit={handleSubmit}>
         <div class="mb-2">
             <div class="flex">
-                   <input type="email" id="sign-in-email" class=" rounded-r-lg flex-1 appearance-none border border-gray-300 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent" placeholder="Your email"/>
+                   <input onChange={(e) => setEmail(e.target.value)} type="email" class=" rounded-r-lg flex-1 appearance-none border border-gray-300 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent" placeholder="Your email"/>
                 </div>
             </div>
             <div class="flex flex-col mb-6">
                 <div class="flex">
-                    <input type="password" id="sign-in-email" class=" rounded-r-lg flex-1 appearance-none border border-gray-300 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent" placeholder="Your password"/>
+                    <input onChange={(e) => setPassword(e.target.value)} type="password" id="sign-in-email" class=" rounded-r-lg flex-1 appearance-none border border-gray-300 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent" placeholder="Your password"/>
                     </div>
                 </div>
                 <div class="flex w-full">

@@ -37,20 +37,20 @@ const Navbar = () => {
      } transition-all duration-300 mt-[56pxz lg:mt-0 [49] bg-primary lg:bg-transparent flex flex-col w-full lg:w-auto lg:flex-row justify-center lg:justify-end fixed top-0 bottom-0 -right-full lg:static flex gap-x-9 items-center`}>
         <ul className='z-50 gap-y-5 items-center flex gap-x-5 flex flex-col lg:flex-row font-semibold gap-x-2'>
             <li>
-                <Link href={'/'}>Home</Link>
+                <Link className="text-orange-500 text-2xl font-bold" href='/'>Home</Link>
             </li>
             <li>
-                <Link href={'/'}>Home</Link>
+                <Link className="text-orange-500 text-2xl font-bold" href={'/'}>Contact</Link>
             </li>
             <li>
-                <Link href={'/'}>Home</Link>
+                <Link className="text-orange-500 text-2xl font-bold" href={'/'}>About</Link>
             </li>
         </ul>
    <button
-        className=' border-2 bg-primary px-6 py-2 rounded-md text-blue-500 font-semibold hover:bg-blue-500 hover:text-white transition-all duration-300'
+        className='px-6 py-2.5 rounded-md bg-primary mt-3 text-white hover:bg-blue-500 hover:text-white transition-all duration-300'
         >Login In</button>
         <button
-        className=' border-2 border-primary px-6 py-2 rounded-md text-blue-500 font-semibold hover:bg-blue-500 hover:text-white transition-all duration-300'
+        className=' px-6 py-2.5 rounded-md bg-blue-500 mt-3 text-white hover:bg-primary hover:text-white transition-all duration-300'
         >Register</button>
     </nav>
    </header>

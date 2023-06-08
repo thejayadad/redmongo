@@ -18,10 +18,10 @@ export default function Post() {
       <div class="p-12 flex flex-col">
         <h2 class="sm:text-3xl text-2xl title-font font-medium text-gray-900 mt-4 mb-4 text-center">Roof party normcore before they sold out, SBSRB srb m lknlkm asrlk laksnrl als nbjka bkljadkbm  cornhole vape</h2>
         <div className="flex items-center justify-center mt-4 gap-x-5">
-              <Link href="/" className="border-2 border-blue-500 px-6 py-2 rounded-full text-blue-500 font-semibold hover:bg-blue-500 hover:text-white transition-all duration-300">
+              <Link href="/" className="border-2 border-blue-500 px-6 py-2 rounded-md text-blue-500 font-semibold hover:bg-blue-500 hover:text-white transition-all duration-300">
                   Edit
               </Link>
-              <Link href="#" className="border-2 border-blue-500 px-6 py-2 rounded-full text-blue-500 font-semibold hover:bg-blue-500 hover:text-white transition-all duration-300">
+              <Link href="#" className="border-2 border-blue-500 px-6 py-2 rounded-md text-blue-500 font-semibold hover:bg-blue-500 hover:text-white transition-all duration-300">
                   Delete
               </Link>
           </div>

@@ -13,7 +13,7 @@ import { useSession } from 'next-auth/react'
 const Createpost = () => {
   const [title, setTitle] = useState('')
   const [desc, setDesc] = useState('')
-  const [category, setCategory] = useState("")
+  const [category, setCategory] = useState("Sports")
 
   const { data: session, status } = useSession()
   const router = useRouter()
@@ -24,7 +24,7 @@ const Createpost = () => {
   }
 
   if (status === 'unauthenticated') {
-    return <p className={classes.accessDenied}>
+    return <p  >
         Access Denied
     </p>
 }
@@ -78,8 +78,7 @@ const handleSubmit = async (e) => {
             <input type='text' onChange={(e) => setDesc(e.target.value)} className='w-full focus:outline-none pt-8 pb-8 pl-2 mt-4' placeholder='Share Your Thoughts...'/>
         </div>
         <div>
-            <select value={category} onChange={(e) => setCategory(e.target.value)}  className='w-full focus:outline-none p-2 mt-4'>
-            <option >Categories</option>
+            <select onChange={(e) => setCategory(e.target.value)}  className='w-full focus:outline-none p-2 mt-4'>
                 <option value='sports'>Sports</option>
                 <option value='money'>Money</option>
                 <option value='news'>News</option>
@@ -87,12 +86,11 @@ const handleSubmit = async (e) => {
                 <option value='programming'>Programming</option>
             </select>
         </div>
-        <div>
             <button
             type='submit'
             className='px-6 py-2.5 rounded-md bg-primary mt-3 text-white hover:bg-blue-500 hover:text-white transition-all duration-300'
             >Post</button>
-        </div>
+     
         </form>
 
         <ToastContainer />

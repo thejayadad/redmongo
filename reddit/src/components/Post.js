@@ -9,9 +9,13 @@ const Post = () => {
   <div class="container px-5 py-4 mx-auto">
     <div class="flex flex-wrap -m-12">
       <div class="p-12 flex flex-col items-start">
-        <span class="inline-block py-1 px-2 rounded bg-indigo-50 text-indigo-500 text-xs font-medium tracking-widest">CATEGORY</span>
-        <h2 class="sm:text-3xl text-2xl title-font font-medium text-gray-900 mt-4 mb-4">Roof party normcore before they sold out, cornhole vape</h2>
-        <p class="leading-relaxed mb-8">Live-edge letterpress cliche, salvia fanny pack humblebrag narwhal portland. VHS man braid palo santo hoodie brunch trust fund. Bitters hashtag waistcoat fashion axe chia unicorn. Plaid fixie chambray 90's, slow-carb etsy tumeric. Cray pug you probably haven't heard of them hexagon kickstarter craft beer pork chic.</p>
+        <span class="inline-block py-1 px-2 rounded bg-indigo-50 text-indigo-500 text-xs font-medium tracking-widest">SPORTS</span>
+        <h2 class="sm:text-3xl text-2xl title-font font-medium text-gray-900 mt-4 mb-4">Unleashing the Fury: The Epic Comeback of the Underdog</h2>
+        <p class="leading-relaxed mb-8">
+        As sports enthusiasts, we are always drawn to the underdogs—those teams or individuals who defy the odds and leave us in awe. In the world of sports, where David occasionally triumphs over Goliath, one such tale stands out among the rest. Brace yourselves for the astounding account of an underdog's spectacular journey—how they defied expectations, battled adversity, and emerged victorious against all odds. Get ready to witness the astonishing comeback of the underdog that left fans worldwide in sheer disbelief.
+
+
+        </p>
         <div class="flex items-center flex-wrap pb-4 mb-4 border-b-2 border-gray-100 mt-auto w-full">
           <Link href={'/post'} class="text-indigo-500 inline-flex items-center">See More
            </Link>
